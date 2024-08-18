@@ -27,6 +27,7 @@ header h1 {
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
+    text-align:center;
 }
 
 .contact-section {
@@ -68,6 +69,7 @@ header h1 {
 
 .form-group {
     margin-bottom: 20px;
+    align:center;
 }
 
 .form-group label {
