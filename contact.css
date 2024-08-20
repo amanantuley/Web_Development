@@ -15,22 +15,32 @@ body {
     background-color: var(--color-background);
     color: var(--color-text-white);
     box-sizing: border-box;
-    padding: 0;
+    padding: 0 10px; /* Padding adjusted for better mobile fit */
 }
 
-.header {
-    background-color: var(--color-light-black);
+/* Header styling */
+header {
+    background: var(--color-light-black);
     color: var(--color-text-white);
+    padding: 20px 0;
     text-align: center;
-    padding: 16px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1em;
+}
+
+/* Main content styling */
 .contact-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 80px); /* Adjust height to account for header/footer */
+    min-height: calc(100vh - 80px); /* Adjust height to account for header and footer */
     padding: 20px;
 }
 
@@ -40,7 +50,7 @@ body {
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     width: 100%;
-    max-width: 100%;
+    max-width: 500px; /* Set a max-width for larger screens */
 }
 
 .input-group {
@@ -84,14 +94,13 @@ body {
     background-color: #32c25b; /* Slightly darker shade on hover */
 }
 
-.footer {
-    background-color: var(--color-light-black);
+/* Footer styling */
+footer {
+    background: var(--color-light-black);
     color: var(--color-text-white);
     text-align: center;
-    padding: 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -116,9 +125,38 @@ body {
     transform: scale(1.1);
 }
 
-/* Media Query for Mobile-Only Styles */
-@media (min-width: 601px) {
-    body, .contact-page, .contact-form, .footer {
-        display: none; /* Hide mobile-specific styles on larger screens */
+/* Responsive adjustments for mobile screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .contact-page {
+        padding: 10px;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    .input-group input {
+        height: 45px; /* Adjust input height for mobile */
+    }
+
+    .btn-submit {
+        height: 45px; /* Adjust button height for mobile */
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .social-links img {
+        width: 20px;
+        height: 20px;
     }
 }
