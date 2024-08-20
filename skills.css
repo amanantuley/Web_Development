@@ -2,8 +2,6 @@
 body, h1, h2, p {
     margin: 0;
     padding: 0;
-    width:800px;
-   
 }
 
 /* Basic styling */
@@ -12,32 +10,32 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
-    padding: 0 20px;
-    width:800px;
+    padding: 0 10px; /* Adjust padding for smaller screens */
+    width: 100%; /* Ensure body takes full width */
 }
 
 /* Header styling */
 header {
     background: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 15px 0; /* Adjust padding for mobile */
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2em; /* Smaller font size for mobile */
+    margin-bottom: 5px; /* Adjust margin for mobile */
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1em; /* Adjust font size for mobile */
 }
 
 /* Skills section styling */
 .skills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 15px; /* Adjust gap for mobile */
     margin: 20px 0;
 }
 
@@ -45,17 +43,19 @@ header p {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
+    padding: 15px; /* Adjust padding for mobile */
     text-align: center;
 }
 
 .skill-card h2 {
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Adjust margin for mobile */
     color: #333;
+    font-size: 1.5em; /* Adjust font size for mobile */
 }
 
 .skill-card p {
     color: #666;
+    font-size: 1em; /* Adjust font size for mobile */
 }
 
 /* Footer styling */
@@ -69,5 +69,30 @@ footer {
 
 footer p {
     margin: 0;
+    font-size: 0.9em; /* Adjust font size for mobile */
 }
 
+/* Media Query for Larger Screens */
+@media (min-width: 600px) {
+    body {
+        padding: 0 20px;
+    }
+    
+    .skills {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .skill-card h2 {
+        font-size: 1.75em;
+    }
+}
