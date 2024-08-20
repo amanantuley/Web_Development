@@ -12,163 +12,106 @@
 body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-sizing: border-box;
-    padding: 0 16px; /* Padding added for mobile */
     background-color: var(--color-background);
     color: var(--color-text-white);
-    font-size: 1rem; /* Base font size */
-    max-width: 100%; /* Ensure it doesn't exceed viewport width */
+    box-sizing: border-box;
+    padding: 0;
 }
 
 .header {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically on small screens */
-    align-items: center;
-    padding: 16px;
-    height: auto; /* Auto height for flexible content */
-    box-shadow: 0 0 0.8px 0 var(--color-border);
-}
-
-.nav-actions {
-    display: flex;
-    flex-direction: column; /* Stack items vertically on small screens */
-    align-items: center;
-    gap: 16px;
-}
-
-.nav-links {
-    display: flex;
-    flex-direction: column; /* Stack links vertically on small screens */
-    gap: 16px;
-    padding: 0;
-    list-style: none;
-}
-
-.nav-link a {
-    text-decoration: none;
-    color: var(--color-text-white);
-}
-
-.nav-link a:hover {
-    color: var(--color-actions);
-}
-
-.nav-buttons {
-    display: flex;
-    flex-direction: column; /* Stack buttons vertically on small screens */
-    gap: 8px;
-}
-
-.btn {
-    height: 40px;
-    border: none;
-    padding: 0.75rem 1.25rem; /* Increased padding for touch targets */
-    border-radius: 12px;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    font-size: 1rem; /* Ensure text is readable */
-}
-
-.btn-sign-in {
-    background-color: var(--color-actions);
-}
-
-.btn-sign-up {
     background-color: var(--color-light-black);
     color: var(--color-text-white);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.contact-container {
+.contact-page {
     display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-top: 36px;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Adjust height to account for header/footer */
+    padding: 20px;
 }
 
-.input {
-    height: 56px;
-    border-radius: 12px;
-    border: 1px solid var(--color-border-1);
-    outline: none;
-    width: 100%; /* Full width on mobile */
-    max-width: 456px; /* Max width for larger screens */
-    padding: 0 8px 0 16px;
+.contact-form {
     background-color: var(--color-background-input-field);
-    color: var(--color-text-white;
-    font-size: 1rem; /* Ensure text is readable */
-}
-
-.input-name {
-    display: flex;
-    flex-direction: column; /* Stack inputs vertically on small screens */
-    gap: 24px;
-}
-
-.input-name input {
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     width: 100%;
+    max-width: 500px;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--color-text-white);
+}
+
+.input-group input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border-1);
+    padding: 0 12px;
+    background-color: var(--color-background-input-field);
+    color: var(--color-text-white);
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: var(--color-placeholder);
 }
 
 .btn-submit {
     background-color: var(--color-actions);
-    width: 100%; /* Full width on mobile */
-    max-width: 480px; /* Max width for larger screens */
-}
-
-.social-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.social {
-    width: 100%; /* Full width on mobile */
-    max-width: 432px; /* Max width for larger screens */
-    height: 64px;
-    border: 1px solid var(--color-border-1);
+    border: none;
+    height: 50px;
+    width: 100%;
     border-radius: 12px;
-    padding: 0 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social-action {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--color-actions);
+    color: var(--color-text-white);
+    font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-::placeholder, .handle, .or-text {
-    color: var(--color-placeholder);
+.btn-submit:hover {
+    background-color: #32c25b; /* Slightly darker shade on hover */
 }
 
-/* Media Queries for Responsive Design */
-@media (min-width: 600px) {
-    .header {
-        flex-direction: row; /* Row layout for larger screens */
-        justify-content: space-between;
-        padding: 20px;
-    }
+.footer {
+    background-color: var(--color-light-black);
+    color: var(--color-text-white);
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
 
-    .nav-actions {
-        flex-direction: row; /* Horizontal layout for larger screens */
-        gap: 32px;
-    }
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-    .nav-links {
-        flex-direction: row; /* Horizontal layout for larger screens */
-        gap: 24px;
-    }
+.social-links a {
+    display: inline-block;
+}
 
-    .nav-buttons {
-        flex-direction: row; /* Horizontal layout for larger screens */
-        gap: 8px;
-    }
+.social-links img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
 
-    .input-name {
-        flex-direction: row; /* Horizontal layout for larger screens */
-        gap: 24px;
-    }
+.social-links img:hover {
+    transform: scale(1.1);
 }
