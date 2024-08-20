@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 80px); /* Adjust height to account for header/footer */
+    height: calc(100vh - 80px); 
     padding: 20px;
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 .btn-submit:hover {
-    background-color: #32c25b; /* Slightly darker shade on hover */
+    background-color: #32c25b; 
 }
 
 .footer {
