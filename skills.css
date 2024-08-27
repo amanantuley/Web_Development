@@ -4,6 +4,42 @@ body, h1, h2, p {
     padding: 0;
 }
 
+
+/* Import the font-family from main page */
+body {
+    font-family: var(--ff-poppins, Arial, sans-serif); /* Fallback to Arial if Poppins isn't available */
+}
+
+/* Apply background gradient from main page */
+body {
+    background: var(--smoky-black);
+}
+
+/* Update skill-card to match main page shadow and border */
+.skill-card {
+    background: var(--eerie-black-2);
+    border: 1px solid var(--jet);
+    box-shadow: var(--shadow-2);
+}
+
+/* Update skill card titles and text to use consistent font colors */
+.skill-card h2 {
+    color: var(--white-2);
+}
+
+.skill-card p {
+    color: var(--light-gray);
+}
+
+/* Use transition effects for skill card hover */
+.skill-card:hover {
+    background: var(--border-gradient-onyx);
+    box-shadow: var(--shadow-3);
+    transition: var(--transition-1);
+}
+
+
+
 /* Basic styling */
 body {
     font-family: Arial, sans-serif;
