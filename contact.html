@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <div class="contact-container">
-        <form action="" method="post" class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            
             <div class="contact-form-title">
                 <h2>Contact Me!</h2>
                 <hr>
             </div>
+            <input type="hidden" name="access_key" value="d65af315-0c33-4509-8335-6ca1b30c73ad">
             <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
             <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
             <textarea name="message" placeholder="Your Message" class="contact-input" rows="5" required></textarea>
