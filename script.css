@@ -72,10 +72,6 @@
     /**
      * typography
      */
-
-  /* Default styles for larger screens */
-
-
   
     /* font-family */
     --ff-poppins: 'Poppins', sans-serif;
@@ -89,6 +85,15 @@
     --fs-6: 14px;
     --fs-7: 13px;
     --fs-8: 11px;
+
+
+
+    /* .sidebar img{
+      background: #38393c;
+      mix-blend-mode: multiply;
+     
+      
+    } */
   
     /* font-weight */
     --fw-300: 300;
@@ -143,6 +148,10 @@
     cursor: pointer;
   }
   
+
+
+
+
   input, textarea {
     display: block;
     width: 100%;
@@ -1317,9 +1326,7 @@
   
   
   
-  /**
-   * responsive larger than 768px screen
-   */
+ 
   
   @media (min-width: 768px) {
   
@@ -1352,19 +1359,7 @@
   
   
   
-    /**
-     * ABOUT
-     */
-  
-    /* testimonials modal */
-  
-    .testimonials-modal {
-      gap: 35px;
-      max-width: 680px;
-    }
-  
-    .modal-avatar-box img { width: 80px; }
-  
+   
   
   
     /**
@@ -1417,9 +1412,7 @@
   
   
   
-  /**
-   * responsive larger than 1024px screen
-   */
+  
   
   @media (min-width: 1024px) {
   
@@ -1439,11 +1432,7 @@
   
     }
   
-  
-  
-    /**
-     * REUSED STYLE
-     */
+
   
     .sidebar, article {
       width: 950px;
@@ -1490,40 +1479,16 @@
     .navbar-link { font-weight: var(--fw-500); }
   
   
-  
-    /**
-     * ABOUT
-     */
-  
-    /* service */
-  
-    .service-list {
-      grid-template-columns: 1fr 1fr;
-      gap: 20px 25px;
-    }
-  
-    /* testimonials */
-  
-    .testimonials-item { min-width: calc(50% - 15px); }
-  
-    /* clients */
-  
-    .clients-item { min-width: calc(25% - 38px); }
+ 
+ 
   
   
-  
-    /**
-     * PORTFOLIO
-     */
   
     .project-list { grid-template-columns: repeat(3, 1fr); }
   
   
   
-    /**
-     * BLOG
-     */
-  
+   
     .blog-banner-box { height: 230px; text-align: center; color: white; }
         
   
@@ -1532,16 +1497,11 @@
   
   
   
-  
-  /**
-   * responsive larger than 1250px screen
-   */
+
   
   @media (min-width: 1250px) {
   
-    /**
-     * RESET
-     */
+ 
   
     body::-webkit-scrollbar { width: 20px; }
   
@@ -1561,9 +1521,6 @@
   
   
   
-    /**
-     * REUSED STYLE
-     */
   
     .sidebar, article { width: auto; }
   
@@ -1571,9 +1528,7 @@
   
   
   
-    /**
-     * MAIN
-     */
+  
   
     main {
       max-width: 1200px;
@@ -1592,9 +1547,6 @@
   
   
   
-    /**
-     * SIDEBAR
-     */
   
     .sidebar {
       position: sticky;
@@ -1643,7 +1595,7 @@
     }
   
     .social-list { justify-content: center; }
-  
+  }
   
   
    
