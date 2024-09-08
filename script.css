@@ -79,6 +79,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  box-sizing: 500px;
     text-align: center;
     padding: 20px; /* Add padding to prevent text from sticking to edges */
 }
