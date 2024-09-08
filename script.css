@@ -72,6 +72,24 @@
     /**
      * typography
      */
+
+   .sidebar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; /* Ensure text is centered under the image */
+  }
+  
+  .sidebar img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px; /* Adds space between the image and the text */
+  }
+  
+
+
+
   
     /* font-family */
     --ff-poppins: 'Poppins', sans-serif;
