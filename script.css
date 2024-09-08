@@ -73,20 +73,39 @@
      * typography
      */
 
-   .sidebar {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center; /* Ensure text is centered under the image */
-  }
-  
-  .sidebar img {
-      width: 100px;
-      border-radius: 50%;
-      margin-bottom: 20px; /* Adds space between the image and the text */
-  }
-  
+  /* Default styles for larger screens */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Add padding to prevent text from sticking to edges */
+}
+
+.sidebar img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .sidebar {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .sidebar img {
+        width: 80px; /* Smaller image for mobile screens */
+        margin-bottom: 15px;
+    }
+
+    .sidebar p {
+        font-size: 16px; /* Adjust text size for readability on mobile */
+        line-height: 1.5; /* Increase line height to avoid text overlap */
+    }
+}
+
 
 
 
