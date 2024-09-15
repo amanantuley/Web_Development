@@ -25,7 +25,7 @@
   
     --bg-gradient-onyx: linear-gradient(
       to bottom right, 
-      hsl(240, 1%, 25%) 3%, 
+      rgb(63, 63, 64) 3%, 
       hsl(0, 0%, 19%) 97%
     );
     --bg-gradient-jet: linear-gradient(
@@ -95,6 +95,56 @@
       
     } */
   
+    
+    .info-content img {
+      background: #38393c;
+      margin: auto;
+      height: 200px;
+      width: 200px;
+      @media screen and (max-width:1250px) {
+        height: 150px;
+        width: 150px;
+        margin-top: -25px;
+      }
+      @media screen and (max-width:579px) and (min-width:467px) {
+       margin-top: -10px;
+      }
+      @media screen and (max-width:466px)  {
+       margin-top: -10px;
+      }
+      /* height: 100px; */
+      /* mix-blend-mode: multiply; */
+      /* max-width: 100%; To prevent overflow */
+    }
+    
+    .info-content {
+      @media screen and (max-width:1250px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        @media screen and (max-width:466px)  {
+          justify-content: center;
+         }
+      }
+    }
+    .sidebar-image-info{
+      margin-left: -13px;
+      @media screen and (max-width:1250px) {
+      margin-left: 50px;
+      }
+      @media screen and (max-width:466px)  {
+        margin-left: 10px;
+       }
+    }
+    .sidebar-image-info h1,p{
+      margin-top: 10px;
+      @media screen and (min-width:1250px) {
+        margin-top: 10px;
+        }
+    }
+
+
+
     /* font-weight */
     --fw-300: 300;
     --fw-400: 400;
@@ -184,8 +234,14 @@
     border: 1px solid var(--jet);
     border-radius: 20px;
     padding: 15px;
+    max-height: none;
     box-shadow: var(--shadow-1);
     z-index: 1;
+    @media screen and (max-width:1250px) {
+      height: fit-content;
+      
+    }
+    /* display: flex; */
   }
   
   .separator {
@@ -329,9 +385,16 @@
   
   .sidebar {
     margin-bottom: 15px;
-    max-height: 112px;
+
     overflow: hidden;
     transition: var(--transition-2);
+    height: fit-content;
+    @media screen and (max-width:466px) {
+      height: 270px;
+    }
+    @media screen and (max-width:579px) and (min-width:467px) {
+      height: 180px;
+    }
   }
   
   .sidebar.active { max-height: 405px; }
@@ -342,6 +405,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
+    flex-wrap: wrap;
   }
   
   .avatar-box {
@@ -1124,7 +1188,7 @@
       margin-bottom: 30px;
     }
   
-    .sidebar.active { max-height: 584px; }
+   
   
     .sidebar-info { gap: 25px; }
   
