@@ -1,88 +1,124 @@
 
-# Learning Portfolio Website 🌟  
 
-This repository contains the **portfolio website** I created while learning HTML, CSS, and front-end development. It was my first step into web development and served as a practice ground for building and styling web pages.  
+# 💼 Personal Portfolio Website
 
+This repository contains my **personal learning portfolio website**, developed as part of my journey into front-end web development. It showcases my skills, achievements, and projects while experimenting with HTML and CSS fundamentals.
 
+---
 
-## 📋 **Table of Contents**
+## 📁 Folder Structure
 
-1. [About the Project](#about-the-project)  
-2. [Features](#features)  
-3. [Technologies Used](#technologies-used)  
-4. [Setup and Installation](#setup-and-installation)  
-5. [What I Learned](#what-i-learned)  
-6. [Screenshots](#screenshots)  
-7. [License](#license)  
+```
+📁 Calculator/           # Mini calculator project (HTML/CSS/JS based)
+📁 Landing page/         # Another sample landing page (sub-project)
+📁 img/                  # Image assets used in the website
 
+📄 index.html            # Main homepage
+📄 achievement.html      # Page for achievements
+📄 contact.html          # Contact information form/page
+📄 project.html          # Project showcase
+📄 skills.html           # Skills summary page
 
+📄 achievement.css       # Styles for achievement page
+📄 contact.css           # Styles for contact page
+📄 project.css           # Styles for project page
+📄 skills.css            # Styles for skills page
+📄 script.css            # Global/common styles
 
-## 📝 **About the Project**  
+📄 LICENSE               # License file (MIT)
+📄 README.md             # This file
+```
 
-This project was created to:  
-- Practice **HTML5** for structuring web content.  
-- Learn **CSS3** for styling and layouts.  
-- Explore the basics of **responsive design**.  
+---
 
-While this is not my official portfolio, it showcases my growth as a developer during the early stages of learning front-end web development.  
+## 🧠 About the Project
 
+This is a beginner-level **HTML/CSS website project** designed to demonstrate:
 
+* Core structure of a multi-page site
+* Component-based CSS styling
+* Theming, layout design, and responsive behavior
+* Separation of concerns between structure (HTML) and presentation (CSS)
 
-## ✨ **Features**  
+---
 
-- Simple and clean design.  
-- Sections for "About Me," "Projects," and "Contact Information."  
-- Basic navigation menu with smooth scrolling.  
-- Fully responsive layout for different screen sizes.  
+## 🌟 Features
 
+* 🧑 About Me, Skills, and Projects sections
+* 📬 Contact form layout
+* 🧾 Organized code with reusable CSS files
+* 📱 Mobile-responsive using media queries
+* 🔢 Includes sub-projects like a Calculator and a Landing Page
 
+---
 
-## 💻 **Technologies Used**  
+## 🛠 Technologies Used
 
-- **HTML5**: For structuring the website.  
-- **CSS3**: For styling, including flexbox and grid layouts.  
-- **Basic JavaScript**: For simple interactivity (if applicable).  
+* **HTML5** – Page structure
+* **CSS3** – Styling (modular stylesheets for each section)
+* *(JavaScript may be used in the Calculator folder if added)*
 
+---
 
-## 🛠 **Setup and Installation**  
+## 🚀 Setup and Usage
 
-1. Clone this repository:  
-   ```bash  
-   git clone https://github.com/your-username/learning-portfolio.git  
-   ```  
+1. **Clone the repository**
 
-2. Navigate to the project folder:  
-   ```bash  
-   cd learning-portfolio  
-   ```  
+   ```bash
+   git clone https://github.com/amanantuley/portfolio-website.git
+   cd portfolio-website
+   ```
 
-3. Open `index.html` in your browser to view the website locally:  
-   ```bash  
-   open index.html  
-   ```  
+2. **Open in browser**
+   You can directly open the `index.html` file in any modern browser:
 
+   ```bash
+   start index.html     # Windows
+   open index.html      # macOS
+   ```
 
-## 📚 **What I Learned**  
+3. **Explore**
+   Navigate through different pages using links on the homepage.
 
-Through this project, I gained:  
-- An understanding of semantic HTML.  
-- Practical experience with CSS selectors, properties, and layouts.  
-- The ability to design responsive web pages using media queries.  
-- Insights into creating reusable styles and maintaining consistency.  
+---
 
+## ✍️ What I Practiced
 
-## 📸 **Screenshots**  
+* Semantic HTML and page layout
+* CSS classes, IDs, flexbox, and grid systems
+* Linking CSS files to individual HTML pages
+* Designing consistent and structured UI
+* Folder organization for large multi-page projects
 
-### Home Page  
-![Home Page](screenshots/home.png)  
+---
 
-### Projects Section  
-![Projects Section](screenshots/projects.png)  
+## 🖼️ Screenshots
 
-*Add more screenshots to showcase different sections of the website.*  
+*You can add images inside the `/img/` folder and reference them here.*
+Example:
 
+```markdown
+### Homepage  
+![Homepage](img/homepage.png)
 
-## 📄 **License**  
+### Skills Page  
+![Skills](img/skills.png)
+```
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.  
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+See [LICENSE](./LICENSE) for full details.
+
+---
+
+## 📬 Contact
+
+* **Author**: Aman Antuley
+* **GitHub**: [@amanantuley](https://github.com/amanantuley)
+* **LinkedIn**: [linkedin.com/in/amanantuley](https://linkedin.com/in/amanantuley)
+* **Email**: [amanantuley@gmail.com](mailto:amanantuley@gmail.com)
+
 
